@@ -1,4 +1,4 @@
-use raytracer::color::write_color;
+
 
 fn main() {
     // Image dimensions

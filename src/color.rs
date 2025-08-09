@@ -1,9 +1,10 @@
+use crate::vec3::Vec3;
 use std::io::Write;
 
 // Assuming you have a Vec3 struct similar to the C++ version
 pub type Color = Vec3;
 
-pub fn write_color(pixel_color: Color) {
+pub fn write_color(out: Write, pixel_color: Color) {
     let r = pixel_color.x();
     let g = pixel_color.y();
     let b = pixel_color.z();
